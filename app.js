@@ -16,7 +16,7 @@ app.set("view engine", "ejs");
 const mongoose = require("mongoose");
 
 
-mongoose.connect( process.env.DBPATH , {useUnifiedTopology: true, useNewUrlParser: true });
+mongoose.connect( env.DBPATH , {useUnifiedTopology: true, useNewUrlParser: true });
 
 const itemsSchema = {
     name: String
